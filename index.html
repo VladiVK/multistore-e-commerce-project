@@ -70,13 +70,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./about.html" class="sidebar__link">
+                    <a href="./products.html" class="sidebar__link">
                         <i class="fas fa-tshirt fa-fw"></i>
                         products
                     </a>
                 </li>
                 <li>
-                    <a href="./products.html" class="sidebar__link">
+                    <a href="./about.html" class="sidebar__link">
                         <i class="fas fa-file-alt fa-fw"></i>
                         about
                     </a>
@@ -85,6 +85,23 @@
         </aside>
     </div>
     <!-- Cart -->
+    <div class="cart__overlay show">
+        <!-- <div class="cart__overlay"> -->
+        <aside class="cart">
+            <!-- cart close button -->
+            <button class="cart__close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <!-- header -->
+            <h3 class="cart__title">your shopping bag</h3>
+            <!-- cart product items -->
+            <div class="cart__items"></div>
+            <footer class="cart__footer">
+                <h3 class="cart__total">total: $99.9</h3>
+                <button class="cart__checkout btn">checkout</button>
+            </footer>
+        </aside>
+    </div>
     <!-- Featured Products -->
     <script type="module" src="./index.js"></script>
 </body>
