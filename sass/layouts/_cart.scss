@@ -52,7 +52,7 @@
 
 .cart__title {
     text-align: center;
-    font-weight: 600;
+    font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
 .cart__total {

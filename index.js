@@ -1,6 +1,7 @@
-import './test.js';
+import './src/toggleSidebar.js';
+import './src/cart/toggleCart.js';
 
-const baseURL = 'https://fakestoreapi.com/products';
+import { getElement } from './src/utils.js';
 
 const init = async () => {
   try {
