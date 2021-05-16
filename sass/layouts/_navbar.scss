@@ -1,4 +1,111 @@
 .navbar {
     height: 6rem;
     background: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__center {
+    width: 90vw;
+    max-width: $max-width;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // for logo positioning
+    @include breakpoint-up(medium) {
+        position: relative;
+
+    }
+}
+
+.navbar__links {
+    display: none;
+
+    @include breakpoint-up(medium) {
+        display: flex;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+}
+
+.navbar__link {
+    color: $clr-white;
+    margin-right: 3rem;
+    transition: $transition;
+    letter-spacing: $spacing;
+
+    &:hover {
+        color: $clr-primary-1;
+    }
+}
+
+.navbar__toggle-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 2rem;
+    font-size: 1.6rem;
+    color: $clr-white;
+    background: transparent;
+    border: 1px solid $clr-primary-1;
+    border-radius: $radius;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+        border: transparent;
+        color: $clr-black;
+        background: $clr-white;
+    }
+
+    @include breakpoint-up(medium) {
+        display: none;
+    }
+}
+
+
+
+.navbar__logo {
+    height: 100%;
+    display: block;
+
+    @include breakpoint-up(medium) {
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-55%, -50%);
+    }
+
+
+}
+
+.navbar__toggle-cart-container {
+    position: relative;
+    margin-top: 0.75rem;
+}
+
+.navbar__toggle-cart {
+    border: transparent;
+    background: transparent;
+    color: $clr-white;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.navbar__toggle-cart-counter {
+    position: absolute;
+    top: -0.85rem;
+    right: -0.85rem;
+    background-color: $clr-primary-1;
+    width: 1.75rem;
+    height: 1.75rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: $clr-black;
 }
