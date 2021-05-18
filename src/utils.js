@@ -1,3 +1,5 @@
+// git rev-list --all --remotes --pretty
+
 const baseURL = 'https://fakestoreapi.com/products';
 
 const getElement = (selector) => {
