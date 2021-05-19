@@ -1,8 +1,9 @@
+// Hero
 .hero {
     min-height: 100vh;
     margin-top: -6rem;
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
-        url('../../images/main-bg_primary.jpg') center/cover;
+        url('../../dist/images/main-bg_primary.jpg') center/cover;
     display: grid;
     place-items: center;
     color: $clr-white;
@@ -46,4 +47,16 @@
     }
 
 
+}
+
+// Featured Products
+
+.featured {
+
+    .btn {
+        display: block;
+        width: 11rem;
+        margin: 0 auto;
+        text-align: center;
+    }
 }

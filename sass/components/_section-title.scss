@@ -14,11 +14,18 @@
         content: "";
         display: block;
         position: absolute;
-        width: 50%;
+        width: 35%;
         height: 5%;
         bottom: -1rem;
         left: 50%;
         transform: translateX(-50%);
         background: $clr-primary-1;
+        transition: $transition;
+    }
+
+    &:hover {
+        &::before {
+            width: 80%;
+        }
     }
 }
