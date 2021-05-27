@@ -31,7 +31,8 @@ const createFeaturedProducts = () => {
   const electronics = store.find((elem) => elem.category === 'electronics');
   const jeweley = store.find((elem) => elem.category === 'jewelery');
   const women = store.find((elem) => elem.category === "women's clothing");
-  return [electronics, jeweley, women];
+  const men = store.find((elem) => elem.category === "men's clothing");
+  return [electronics, jeweley, women, men];
 };
 
 export {

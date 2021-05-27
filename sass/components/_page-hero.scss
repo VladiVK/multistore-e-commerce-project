@@ -1,0 +1,11 @@
+.page-hero {
+  min-height: 20vh;
+  display: grid;
+  place-items: center;
+  background: $clr-grey-10;
+  color: $clr-grey-5;
+}
+
+.page-hero-title {
+  font-weight: 500;
+}

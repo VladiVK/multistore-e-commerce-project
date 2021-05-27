@@ -1,147 +1,145 @@
 // Hero
 .hero {
-    min-height: 100vh;
-    margin-top: -6rem;
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
-        url('../../dist/images/main-bg_primary.jpg') center/cover;
-    display: grid;
-    place-items: center;
+  min-height: 100vh;
+  margin-top: -6rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../../dist/images/main-bg_primary.jpg') center/cover;
+  display: grid;
+  place-items: center;
+  color: $clr-white;
+
+  &__container {
+    width: 90vw;
+    height: 10rem;
+    max-width: $max-width;
+  }
+
+  // &__title {}
+
+  &__subtitle {
+    text-transform: none;
+    font-style: italic;
+    font-family: $ff-primary;
+
+    @include breakpoint-up(large) {
+      margin-top: 1rem;
+    }
+  }
+
+  &__btn {
+    background: transparent;
     color: $clr-white;
+    border-radius: $radius;
+    padding: 0.375rem 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: $spacing;
+    display: inline-block;
+    transition: $transition;
+    border: 1px solid $clr-primary-1;
+    cursor: pointer;
+    margin-top: 2rem;
 
-    &__container {
-        width: 90vw;
-        height: 10rem;
-        max-width: $max-width;
+    &:hover {
+      background: $clr-white;
+      color: $clr-grey-1;
+      border-color: transparent;
     }
-
-    // &__title {}
-
-    &__subtitle {
-        text-transform: none;
-        font-style: italic;
-        font-family: $ff-primary;
-
-        @include breakpoint-up(large) {
-            margin-top: 1rem;
-        }
-    }
-
-    &__btn {
-        background: transparent;
-        color: $clr-white;
-        border-radius: $radius;
-        padding: 0.375rem 0.75rem;
-        text-transform: uppercase;
-        letter-spacing: $spacing;
-        display: inline-block;
-        transition: $transition;
-        border: 1px solid $clr-primary-1;
-        cursor: pointer;
-        margin-top: 2rem;
-
-        &:hover {
-            background: $clr-white;
-            color: $clr-grey-1;
-            border-color: transparent;
-        }
-    }
-
-
+  }
 }
 
 // Featured Products
 
 .featured {
-
-    .btn {
-        display: block;
-        width: 11rem;
-        margin: 0 auto;
-        text-align: center;
-    }
+  .btn {
+    display: block;
+    width: 11rem;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .featured-center {
-    margin: 3rem auto 2rem auto;
-    display: grid;
-    gap: 1rem;
-    min-height: 6rem;
-    position: relative;
+  margin: 3rem auto 2rem auto;
+  display: grid;
+  gap: 1rem;
+  min-height: 6rem;
+  position: relative;
 
-    @include breakpoint-up(medium) {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    @include breakpoint-up(large) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  @include breakpoint-up(small) {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.3rem;
+  }
+  @include breakpoint-up(medium) {
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include breakpoint-up(large) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
-
-
 .product-img {
-    height: 15rem;
-    object-fit: cover;
-    border-radius: $radius;
-
+  height: 15rem;
+  object-fit: cover;
+  border-radius: $radius;
 }
 
 .product .img {
-    @include breakpoint-up(large) {
-        height: 13rem;
-    }
+  @include breakpoint-up(large) {
+    height: 13rem;
+  }
 }
 
 .product-container {
-    position: relative;
+  position: relative;
 }
 
 .product-icons {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    display: flex;
-    transition: $transition;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  display: flex;
+  transition: $transition;
 }
 
 .product-icon {
-    width: 2.25rem;
-    height: 2.25rem;
-    background: $clr-primary-2;
-    color: $clr-white;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    transition: $transition;
-    cursor: pointer;
-    font-size: 1rem;
-    border-color: transparent;
-    margin: 0 0.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: $clr-primary-2;
+  color: $clr-white;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transition: $transition;
+  cursor: pointer;
+  font-size: 1rem;
+  border-color: transparent;
+  margin: 0 0.5rem;
 }
 
 .product-icon:hover {
-    background: darken($clr-primary-1, 20%);
+  background: darken($clr-primary-1, 20%);
 }
 
 .product-container:hover .product-icons {
-    opacity: 1;
+  opacity: 1;
 }
 
 .product footer {
-    padding: 0.75rem 0;
-    text-align: center;
+  padding: 0.75rem 0;
+  text-align: center;
 }
 
 .product-name {
-    margin-bottom: 0.25rem;
-    text-transform: capitalize;
-    letter-spacing: $spacing;
+  margin-bottom: 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: $spacing;
 }
 
 .product-price {
-    margin-bottom: 0;
-    color: $clr-grey-3;
-    font-weight: 700;
+  margin-bottom: 0;
+  color: $clr-grey-3;
+  font-weight: 700;
 }

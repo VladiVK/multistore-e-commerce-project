@@ -1,126 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <!-- css -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Multi Store</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="navbar__center">
-            <!-- toggle button & links -->
-            <div class="navbar__toggle-container">
-                <button class="navbar__toggle-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="navbar__links">
-                    <li>
-                        <a href="./index.html" class="navbar__link">home</a>
-                    </li>
-                    <li>
-                        <a href="./products.html" class="navbar__link">products</a>
-                    </li>
-                    <li>
-                        <a href="./about.html" class="navbar__link">about</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- logo -->
-            <img class="navbar__logo" src="./images/logo-white.svg" alt="logotype">
-            <!-- cart icon -->
-            <div class="navbar__toggle-cart-container">
-                <button class="navbar__toggle-cart">
-                    <i class="fas fa-shopping-cart"></i>
-                </button>
-                <span class="navbar__toggle-cart-counter">1</span>
-            </div>
+      <div class="navbar__center">
+        <!-- toggle button & links -->
+        <div class="navbar__toggle-container">
+          <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="navbar__links">
+            <li>
+              <a href="./index.html" class="navbar__link">home</a>
+            </li>
+            <li>
+              <a href="./products.html" class="navbar__link">products</a>
+            </li>
+            <li>
+              <a href="./about.html" class="navbar__link">about</a>
+            </li>
+          </ul>
         </div>
+        <!-- logo -->
+        <img
+          class="navbar__logo"
+          src="./images/logo-white.svg"
+          alt="logotype"
+        />
+        <!-- cart icon -->
+        <div class="navbar__toggle-cart-container">
+          <button class="navbar__toggle-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="navbar__toggle-cart-counter">1</span>
+        </div>
+      </div>
     </nav>
     <!-- Hero -->
     <section class="hero">
-        <div class="hero__container">
-            <h1 class="hero__title">wear. enjoy. live</h1>
-            <h3 class="hero__subtitle">Revive your style </h3>
-            <a href="./products.html" class="hero__btn">start now</a>
-        </div>
+      <div class="hero__container">
+        <h1 class="hero__title">wear. enjoy. live</h1>
+        <h3 class="hero__subtitle">Revive your style</h3>
+        <a href="./products.html" class="hero__btn">start now</a>
+      </div>
     </section>
     <!-- Sidebar -->
     <div class="sidebar-overlay">
-        <aside class="sidebar">
-            <!-- close button -->
-            <button class="sidebar__close-btn">
-                <i class="fas fa-times"></i>
-            </button>
-            <!-- sidebar links -->
-            <!-- important "fa-fw" for one row width !!! -->
-            <ul class="sidebar__links">
-                <li>
-                    <a href="./index.html" class="sidebar__link">
-                        <i class="fas fa-home fa-fw"></i>
-                        home
-                    </a>
-                </li>
-                <li>
-                    <a href="./products.html" class="sidebar__link">
-                        <i class="fas fa-tshirt fa-fw"></i>
-                        products
-                    </a>
-                </li>
-                <li>
-                    <a href="./about.html" class="sidebar__link">
-                        <i class="fas fa-file-alt fa-fw"></i>
-                        about
-                    </a>
-                </li>
-            </ul>
-        </aside>
+      <aside class="sidebar">
+        <!-- close button -->
+        <button class="sidebar__close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- sidebar links -->
+        <!-- important "fa-fw" for one row width !!! -->
+        <ul class="sidebar__links">
+          <li>
+            <a href="./index.html" class="sidebar__link">
+              <i class="fas fa-home fa-fw"></i>
+              home
+            </a>
+          </li>
+          <li>
+            <a href="./products.html" class="sidebar__link">
+              <i class="fas fa-tshirt fa-fw"></i>
+              products
+            </a>
+          </li>
+          <li>
+            <a href="./about.html" class="sidebar__link">
+              <i class="fas fa-file-alt fa-fw"></i>
+              about
+            </a>
+          </li>
+        </ul>
+      </aside>
     </div>
     <!-- Cart -->
     <div class="cart__overlay">
-        <!-- <div class="cart__overlay"> -->
-        <aside class="cart">
-            <!-- cart close button -->
-            <button class="cart__close-btn">
-                <i class="fas fa-times"></i>
-            </button>
-            <!-- header -->
-            <h3 class="cart__title">your shopping cart</h3>
-            <!-- cart product items -->
-            <div class="cart__items"></div>
-            <footer class="cart__footer">
-                <h3 class="cart__total">total: $99.9</h3>
-                <button class="cart__checkout btn">checkout</button>
-            </footer>
-        </aside>
+      <!-- <div class="cart__overlay"> -->
+      <aside class="cart">
+        <!-- cart close button -->
+        <button class="cart__close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- header -->
+        <h3 class="cart__title">your shopping cart</h3>
+        <!-- cart product items -->
+        <div class="cart__items"></div>
+        <footer class="cart__footer">
+          <h3 class="cart__total">total: $99.9</h3>
+          <button class="cart__checkout btn">checkout</button>
+        </footer>
+      </aside>
     </div>
     <!-- Some Featured Products -->
     <section class="section featured">
-        <!-- section title -->
-        <div class="title">
-            <h2 class="title__text">Featured Products</h2>
+      <!-- section title -->
+      <div class="title">
+        <h2 class="title__text">Featured Products</h2>
+      </div>
+      <!-- featured goods -->
+
+      <div class="section-center featured-center">
+        <!-- loader -->
+        <div class="loader-container">
+          <div class="loader"></div>
         </div>
-        <!-- featured goods -->
 
+        <!-- Featured products -->
 
-        <div class="section-center featured-center">
-            <!-- loader -->
-            <div class="loader-container">
-                <div class="loader"></div>
-            </div>
-
-            <!-- Featured products -->
-
-            <!-- single product -->
-            <!-- <article class="product">
+        <!-- single product -->
+        <!-- <article class="product">
                 <div class="product-container">
                     <img class="product-img img" src="./images/main-bg_secondary.jpg" alt="">
                     <div class="product-icons">
@@ -137,14 +141,12 @@
                     <h4 class="product-price">$99</h4>
                 </footer>
             </article> -->
-            <!-- end of single product -->
-        </div>
+        <!-- end of single product -->
+      </div>
 
-        <a href="./products.html" class="btn">show more</a>
-
+      <a href="./products.html" class="btn">show more</a>
     </section>
 
     <script type="module" src="./index.js"></script>
-</body>
-
+  </body>
 </html>
