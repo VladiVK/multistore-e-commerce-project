@@ -1,6 +1,7 @@
 // git rev-list --all --remotes --pretty
 
 const baseURL = 'https://fakestoreapi.com/products';
+const allCategoriesURL = 'https://fakestoreapi.com/products/categories';
 
 const getElement = (selector) => {
   const element = document.querySelector(selector);
@@ -16,4 +17,10 @@ const setLocalStorageItem = (name, item) => {
   localStorage.setItem(name, JSON.stringify(item));
 };
 
-export { baseURL, getElement, setLocalStorageItem, getLocalStorageItem };
+export {
+  baseURL,
+  allCategoriesURL,
+  getElement,
+  setLocalStorageItem,
+  getLocalStorageItem,
+};
