@@ -109,3 +109,23 @@
     font-size: 1rem;
     color: $clr-black;
 }
+
+/* page navbar */
+.page {
+    .navbar__link {
+
+  color: $clr-grey-1;
+
+  &:hover {
+     color: $clr-primary-2; 
+  }
+}
+    .navbar__toggle-cart {
+    color: $clr-grey-5;
+    }
+
+    .navbar__toggle-btn {
+        color: $clr-grey-1;
+    }
+
+}

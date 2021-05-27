@@ -8,7 +8,7 @@ import fetchProducts from './src/fetchProducts.js';
 import display from './src/displayProducts.js';
 
 const init = async () => {
-  const products = await fetchProducts(baseUR);
+  const products = await fetchProducts(baseURL);
   if (products) {
     // add our products to Store
     setupStore(products);
