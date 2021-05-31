@@ -1,0 +1,88 @@
+.products {
+  width: 90vw;
+  max-width: $max-width;
+  margin: 4rem auto;
+  display: grid;
+  grid-gap: 1rem;
+  position: relative;
+
+  @include breakpoint-up(small) {
+    grid-template-columns: 200px 1fr;
+  }
+}
+.products__container {
+  @include breakpoint-up(medium) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+
+    .product-img {
+      height: 10rem;
+    }
+
+    .product-name {
+      font-size: 0.85rem;
+    }
+
+    .product-price {
+      font-size: 0.85rem;
+    }
+  }
+
+  @include breakpoint-up(large) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// sticky will be applied if its parent container have big amount of content for scrolling
+.filters__container {
+  position: sticky;
+  top: 1rem;
+}
+.filters h4 {
+  font-weight: 500;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border-color: transparent;
+  background: $clr-grey-10;
+  border-radius: $radius;
+  letter-spacing: $spacing;
+
+  &::placeholder {
+    text-transform: capitalize;
+  }
+}
+
+.category-btn {
+  display: block;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  border: transparent;
+  background: transparent;
+  text-transform: capitalize;
+  letter-spacing: $spacing;
+  color: $clr-grey-5;
+  transition: $transition;
+  cursor: pointer;
+
+  &:hover {
+    color: $clr-grey-3;
+  }
+}
+
+.price-filter {
+  background: $clr-grey-5 !important;
+  color: $clr-grey-5;
+}
+
+.filter-error {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 4rem;
+}

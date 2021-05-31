@@ -12,33 +12,27 @@ They have no direct output.
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+          box-sizing: border-box; }
 
 body {
   color: var(--clr-grey-1);
-  line-height: 1.5;
-}
+  line-height: 1.5; }
 
 a,
 a:visited,
 a:hover {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
-}
+  color: var(--clr-grey-5); }
 
 body {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: clamp(0.875rem, 2.5vw, 1.2rem);
-}
+  font-size: clamp(0.875rem, 2.5vw, 1.2rem); }
 
 h1,
 h2,
@@ -49,57 +43,45 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 h1 {
-  font-size: clamp(2.5rem, 4vw, 4rem);
-}
+  font-size: clamp(2.5rem, 4vw, 4rem); }
 
 h2 {
-  font-size: clamp(2rem, 3vw, 4rem);
-}
+  font-size: clamp(2rem, 3vw, 4rem); }
 
 h3 {
-  font-size: clamp(1.5rem, 2.5vw, 4rem);
-}
+  font-size: clamp(1.5rem, 2.5vw, 4rem); }
 
 h4 {
-  font-size: clamp(0.875rem, 1.5vw, 1rem);
-}
+  font-size: clamp(0.875rem, 1.5vw, 1rem); }
 
 @-webkit-keyframes loader {
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
+            transform: rotate(360deg); } }
 
 @keyframes loader {
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
+            transform: rotate(360deg); } }
 
 /*
 This file is used to contain all component imports.
 Files inside this folder should contain all styles relating to a reusable component.
 */
 .section {
-  padding: 3rem 0;
-}
+  padding: 3rem 0; }
 
 .section-center {
   width: 90vw;
   max-width: 1170px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .img {
   display: block;
-  width: 100%;
-}
+  width: 100%; }
 
 .btn {
   background: #243a52;
@@ -113,13 +95,11 @@ Files inside this folder should contain all styles relating to a reusable compon
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
   border-color: transparent;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .btn:hover {
   background: #f1f5f8;
-  color: #243a52;
-}
+  color: #243a52; }
 
 .title {
   display: -webkit-box;
@@ -131,35 +111,29 @@ Files inside this folder should contain all styles relating to a reusable compon
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 3rem;
-}
+  margin-bottom: 3rem; }
 
 .title__text {
   color: #102a42;
   display: block;
-  position: relative;
-}
-
-.title__text::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 35%;
-  height: 5%;
-  bottom: -1rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: #FAD13B;
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
-.title__text:hover::before {
-  width: 80%;
-}
+  position: relative; }
+  .title__text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 35%;
+    height: 5%;
+    bottom: -1rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background: #FAD13B;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+  .title__text:hover::before {
+    width: 80%; }
 
 .loader-container {
   position: absolute;
@@ -176,8 +150,7 @@ Files inside this folder should contain all styles relating to a reusable compon
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-}
+          align-items: center; }
 
 .page-loading {
   position: fixed;
@@ -194,8 +167,7 @@ Files inside this folder should contain all styles relating to a reusable compon
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-}
+          align-items: center; }
 
 .loader {
   width: 7rem;
@@ -204,8 +176,7 @@ Files inside this folder should contain all styles relating to a reusable compon
   border-top-color: #FAD13B;
   border-radius: 50%;
   -webkit-animation: loader .6s linear infinite;
-          animation: loader .6s linear infinite;
-}
+          animation: loader .6s linear infinite; }
 
 .loader-container {
   position: absolute;
@@ -222,8 +193,7 @@ Files inside this folder should contain all styles relating to a reusable compon
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-}
+          align-items: center; }
 
 .page-loading {
   position: fixed;
@@ -240,8 +210,7 @@ Files inside this folder should contain all styles relating to a reusable compon
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-}
+          align-items: center; }
 
 .loader {
   width: 7rem;
@@ -250,8 +219,7 @@ Files inside this folder should contain all styles relating to a reusable compon
   border-top-color: #FAD13B;
   border-radius: 50%;
   -webkit-animation: loader .6s linear infinite;
-          animation: loader .6s linear infinite;
-}
+          animation: loader .6s linear infinite; }
 
 .page-hero {
   min-height: 20vh;
@@ -259,12 +227,75 @@ Files inside this folder should contain all styles relating to a reusable compon
   display: grid;
   place-items: center;
   background: #f1f5f8;
-  color: #617d98;
-}
+  color: #617d98; }
 
 .page-hero-title {
-  font-weight: 500;
-}
+  font-weight: 500; }
+
+.product-img {
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.25rem; }
+
+@media screen and (min-width: 1024px) {
+  .product .img {
+    height: 13rem; } }
+
+.product-container {
+  position: relative; }
+
+.product-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+
+.product-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  background: #d8bd5d;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  font-size: 1rem;
+  border-color: transparent;
+  margin: 0 0.5rem; }
+
+.product-icon:hover {
+  background: #caa005; }
+
+.product-container:hover .product-icons {
+  opacity: 1; }
+
+.product footer {
+  padding: 0.75rem 0;
+  text-align: center; }
+
+.product-name {
+  margin-bottom: 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem; }
+
+.product-price {
+  margin-bottom: 0;
+  color: #324d67;
+  font-weight: 700; }
 
 /* Additonal Component Stylesheets */
 /*
@@ -282,8 +313,7 @@ Files inside this folder can contain specific element styles and layout.
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-}
+          align-items: center; }
 
 .navbar__center {
   width: 90vw;
@@ -296,28 +326,20 @@ Files inside this folder can contain specific element styles and layout.
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media screen and (min-width: 992px) {
-  .navbar__center {
-    position: relative;
-  }
-}
+          justify-content: space-between; }
+  @media screen and (min-width: 992px) {
+    .navbar__center {
+      position: relative; } }
 
 .navbar__links {
-  display: none;
-}
-
-@media screen and (min-width: 992px) {
-  .navbar__links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 1.5rem;
-    text-transform: capitalize;
-  }
-}
+  display: none; }
+  @media screen and (min-width: 992px) {
+    .navbar__links {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 1.5rem;
+      text-transform: capitalize; } }
 
 .navbar__link {
   color: #fff;
@@ -325,12 +347,9 @@ Files inside this folder can contain specific element styles and layout.
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  letter-spacing: 0.1rem;
-}
-
-.navbar__link:hover {
-  color: #FAD13B;
-}
+  letter-spacing: 0.1rem; }
+  .navbar__link:hover {
+    color: #FAD13B; }
 
 .navbar__toggle-btn {
   display: -webkit-box;
@@ -352,48 +371,36 @@ Files inside this folder can contain specific element styles and layout.
   cursor: pointer;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
-.navbar__toggle-btn:hover {
-  border: transparent;
-  color: #222;
-  background: #fff;
-}
-
-@media screen and (min-width: 992px) {
-  .navbar__toggle-btn {
-    display: none;
-  }
-}
+  transition: all 0.3s linear; }
+  .navbar__toggle-btn:hover {
+    border: transparent;
+    color: #222;
+    background: #fff; }
+  @media screen and (min-width: 992px) {
+    .navbar__toggle-btn {
+      display: none; } }
 
 .navbar__logo {
   height: 100%;
-  display: block;
-}
-
-@media screen and (min-width: 992px) {
-  .navbar__logo {
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    -webkit-transform: translate(-55%, -50%);
-        -ms-transform: translate(-55%, -50%);
-            transform: translate(-55%, -50%);
-  }
-}
+  display: block; }
+  @media screen and (min-width: 992px) {
+    .navbar__logo {
+      position: absolute;
+      top: 50%;
+      left: 55%;
+      -webkit-transform: translate(-55%, -50%);
+          -ms-transform: translate(-55%, -50%);
+              transform: translate(-55%, -50%); } }
 
 .navbar__toggle-cart-container {
-  position: relative;
-}
+  position: relative; }
 
 .navbar__toggle-cart {
   border: transparent;
   background: transparent;
   color: #fff;
   font-size: 1.6rem;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .navbar__toggle-cart-counter {
   position: absolute;
@@ -407,25 +414,19 @@ Files inside this folder can contain specific element styles and layout.
   place-items: center;
   border-radius: 50%;
   font-size: 1rem;
-  color: #222;
-}
+  color: #222; }
 
 /* page navbar */
 .page .navbar__link {
-  color: #102a42;
-}
-
-.page .navbar__link:hover {
-  color: #d8bd5d;
-}
+  color: #102a42; }
+  .page .navbar__link:hover {
+    color: #d8bd5d; }
 
 .page .navbar__toggle-cart {
-  color: #617d98;
-}
+  color: #617d98; }
 
 .page .navbar__toggle-btn {
-  color: #102a42;
-}
+  color: #102a42; }
 
 .sidebar-overlay {
   position: fixed;
@@ -441,19 +442,13 @@ Files inside this folder can contain specific element styles and layout.
   background: rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
-.sidebar-overlay.show {
-  opacity: 1;
-  z-index: 1;
-}
-
-@media screen and (min-width: 992px) {
-  .sidebar-overlay {
-    display: none;
-  }
-}
+  transition: all 0.3s linear; }
+  .sidebar-overlay.show {
+    opacity: 1;
+    z-index: 1; }
+  @media screen and (min-width: 992px) {
+    .sidebar-overlay {
+      display: none; } }
 
 .sidebar {
   position: relative;
@@ -469,14 +464,12 @@ Files inside this folder can contain specific element styles and layout.
   transition: all 0.3s linear;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
-          transform: scale(0);
-}
+          transform: scale(0); }
 
 .show .sidebar {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
-          transform: scale(1);
-}
+          transform: scale(1); }
 
 .sidebar__close-btn {
   position: absolute;
@@ -486,20 +479,16 @@ Files inside this folder can contain specific element styles and layout.
   border: transparent;
   font-size: 2rem;
   cursor: pointer;
-  color: #324d67;
-}
+  color: #324d67; }
 
 .sidebar__link {
   color: #102a42;
   font-size: 1.5rem;
-  text-transform: capitalize;
-}
-
-.sidebar__link > i {
-  color: #617d98;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-}
+  text-transform: capitalize; }
+  .sidebar__link > i {
+    color: #617d98;
+    margin-right: 1rem;
+    margin-bottom: 1rem; }
 
 .cart__overlay {
   position: fixed;
@@ -512,13 +501,10 @@ Files inside this folder can contain specific element styles and layout.
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.cart__overlay.show {
-  opacity: 1;
-  z-index: 1;
-}
+  background: rgba(0, 0, 0, 0.5); }
+  .cart__overlay.show {
+    opacity: 1;
+    z-index: 1; }
 
 .cart {
   position: fixed;
@@ -539,14 +525,12 @@ Files inside this folder can contain specific element styles and layout.
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  background: #bcccdc;
-}
+  background: #bcccdc; }
 
 .show .cart {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
-          transform: translateX(0);
-}
+          transform: translateX(0); }
 
 .cart__close-btn {
   position: absolute;
@@ -556,26 +540,22 @@ Files inside this folder can contain specific element styles and layout.
   background: none;
   border: none;
   cursor: pointer;
-  color: #102a42;
-}
+  color: #102a42; }
 
 .cart__title {
   text-align: center;
-  font-size: clamp(1.5rem, 2vw, 2rem);
-}
+  font-size: clamp(1.5rem, 2vw, 2rem); }
 
 .cart__total {
   text-align: center;
   margin-bottom: 2rem;
-  font-weight: 600;
-}
+  font-weight: 600; }
 
 .cart__checkout {
   display: block;
   width: 75%;
   margin: 0 auto;
-  margin-bottom: 3rem;
-}
+  margin-bottom: 3rem; }
 
 .hero {
   min-height: 100vh;
@@ -586,55 +566,42 @@ Files inside this folder can contain specific element styles and layout.
   display: -ms-grid;
   display: grid;
   place-items: center;
-  color: #fff;
-}
-
-.hero__container {
-  width: 90vw;
-  height: 10rem;
-  max-width: 1170px;
-}
-
-.hero__subtitle {
-  text-transform: none;
-  font-style: italic;
-  font-family: "Montserrat";
-}
-
-@media screen and (min-width: 1024px) {
+  color: #fff; }
+  .hero__container {
+    width: 90vw;
+    height: 10rem;
+    max-width: 1170px; }
   .hero__subtitle {
-    margin-top: 1rem;
-  }
-}
-
-.hero__btn {
-  background: transparent;
-  color: #fff;
-  border-radius: 0.25rem;
-  padding: 0.375rem 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  display: inline-block;
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  border: 1px solid #FAD13B;
-  cursor: pointer;
-  margin-top: 2rem;
-}
-
-.hero__btn:hover {
-  background: #fff;
-  color: #102a42;
-  border-color: transparent;
-}
+    text-transform: none;
+    font-style: italic;
+    font-family: "Montserrat"; }
+    @media screen and (min-width: 1024px) {
+      .hero__subtitle {
+        margin-top: 1rem; } }
+  .hero__btn {
+    background: transparent;
+    color: #fff;
+    border-radius: 0.25rem;
+    padding: 0.375rem 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    border: 1px solid #FAD13B;
+    cursor: pointer;
+    margin-top: 2rem; }
+    .hero__btn:hover {
+      background: #fff;
+      color: #102a42;
+      border-color: transparent; }
 
 .featured .btn {
   display: block;
   width: 11rem;
   margin: 0 auto;
-  text-align: center;
-}
+  text-align: center; }
 
 .featured-center {
   margin: 3rem auto 2rem auto;
@@ -642,104 +609,102 @@ Files inside this folder can contain specific element styles and layout.
   display: grid;
   gap: 1rem;
   min-height: 6rem;
-  position: relative;
-}
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .featured-center {
+      -ms-grid-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
+      gap: 1.3rem; } }
+  @media screen and (min-width: 992px) {
+    .featured-center {
+      gap: 1.5rem;
+      -ms-grid-columns: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr; } }
+  @media screen and (min-width: 1024px) {
+    .featured-center {
+      -ms-grid-columns: 1fr 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr; } }
 
-@media screen and (min-width: 768px) {
-  .featured-center {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    gap: 1.3rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .featured-center {
-    gap: 1.5rem;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .featured-center {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
-.product-img {
-  height: 15rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 0.25rem;
-}
-
-@media screen and (min-width: 1024px) {
-  .product .img {
-    height: 13rem;
-  }
-}
-
-.product-container {
-  position: relative;
-}
-
-.product-icons {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  opacity: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
-.product-icon {
-  width: 2.25rem;
-  height: 2.25rem;
-  background: #d8bd5d;
-  color: #fff;
+.products {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 4rem auto;
   display: -ms-grid;
   display: grid;
-  place-items: center;
-  border-radius: 50%;
+  grid-gap: 1rem;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .products {
+      -ms-grid-columns: 200px 1fr;
+          grid-template-columns: 200px 1fr; } }
+
+@media screen and (min-width: 992px) {
+  .products__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem; }
+    .products__container .product-img {
+      height: 10rem; }
+    .products__container .product-name {
+      font-size: 0.85rem; }
+    .products__container .product-price {
+      font-size: 0.85rem; } }
+
+@media screen and (min-width: 1024px) {
+  .products__container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr); } }
+
+.filters__container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1rem; }
+
+.filters h4 {
+  font-weight: 500;
+  margin: 1.5rem 0 0.5rem; }
+
+.search-input {
+  padding: 0.5rem;
+  border-color: transparent;
+  background: #f1f5f8;
+  border-radius: 0.25rem;
+  letter-spacing: 0.1rem; }
+  .search-input::-webkit-input-placeholder {
+    text-transform: capitalize; }
+  .search-input:-ms-input-placeholder {
+    text-transform: capitalize; }
+  .search-input::-ms-input-placeholder {
+    text-transform: capitalize; }
+  .search-input::placeholder {
+    text-transform: capitalize; }
+
+.category-btn {
+  display: block;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  border: transparent;
+  background: transparent;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  color: #617d98;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  cursor: pointer;
-  font-size: 1rem;
-  border-color: transparent;
-  margin: 0 0.5rem;
-}
+  cursor: pointer; }
+  .category-btn:hover {
+    color: #324d67; }
 
-.product-icon:hover {
-  background: #caa005;
-}
+.price-filter {
+  background: #617d98 !important;
+  color: #617d98; }
 
-.product-container:hover .product-icons {
-  opacity: 1;
-}
-
-.product footer {
-  padding: 0.75rem 0;
+.filter-error {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
   text-align: center;
-}
-
-.product-name {
-  margin-bottom: 0.25rem;
-  text-transform: capitalize;
-  letter-spacing: 0.1rem;
-}
-
-.product-price {
-  margin-bottom: 0;
-  color: #324d67;
-  font-weight: 700;
-}
+  margin-top: 4rem; }
