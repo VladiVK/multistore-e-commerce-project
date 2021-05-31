@@ -1,3 +1,4 @@
+import fetchProducts from './fetchProducts.js';
 import { getLocalStorageItem, setLocalStorageItem } from './utils.js';
 
 // store: products or []
@@ -20,13 +21,6 @@ const setupStore = (products) => {
 
 const findProduct = (id) => store.find((product) => product.id === id);
 
-const allCategories = [
-  'electronics',
-  'jewelery',
-  "men's clothing",
-  "women's clothing",
-];
-
 const createFeaturedProducts = () => {
   const electronics = store.find((elem) => elem.category === 'electronics');
   const jeweley = store.find((elem) => elem.category === 'jewelery');
@@ -35,10 +29,4 @@ const createFeaturedProducts = () => {
   return [electronics, jeweley, women, men];
 };
 
-export {
-  store,
-  setupStore,
-  findProduct,
-  allCategories,
-  createFeaturedProducts,
-};
+export { store, setupStore, findProduct, createFeaturedProducts };
