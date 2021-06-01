@@ -229,7 +229,7 @@ Files inside this folder should contain all styles relating to a reusable compon
   background: #f1f5f8;
   color: #617d98; }
 
-.page-hero-title {
+.page-hero__title {
   font-weight: 500; }
 
 .product-img {
