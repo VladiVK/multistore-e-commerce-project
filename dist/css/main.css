@@ -625,6 +625,62 @@ Files inside this folder can contain specific element styles and layout.
       -ms-grid-columns: 1fr 1fr 1fr 1fr;
           grid-template-columns: 1fr 1fr 1fr 1fr; } }
 
+.about__center {
+  width: 90vw;
+  max-width: 45rem;
+  margin: 0 auto; }
+
+.about__info {
+  line-height: 2;
+  margin: 0 auto;
+  margin-top: 2rem;
+  color: #324d67;
+  font-size: 1.3rem; }
+
+.faq__center {
+  max-width: 45rem;
+  margin: 0 auto; }
+
+.question {
+  margin-bottom: 1.5rem; }
+  .question__title {
+    background: #617d98;
+    color: #fff;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: capitalize;
+    cursor: pointer; }
+  .question__text-container {
+    background: #617d98;
+    color: #fff;
+    border-radius: 0.25rem;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+  .question__text-container:not(.active-text) {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+  .question__text-container p {
+    border-top: 1px solid #fff;
+    padding: 1rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+
 .single-product {
   padding: 2rem 0; }
   .single-product__center {

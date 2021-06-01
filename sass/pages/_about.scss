@@ -1,0 +1,54 @@
+.about__center {
+  width: 90vw;
+  max-width: 45rem;
+  margin: 0 auto;
+}
+.about__info {
+  line-height: 2;
+  margin: 0 auto;
+  margin-top: 2rem;
+  color: $clr-grey-3;
+  font-size: 1.3rem;
+}
+.faq__center {
+  max-width: 45rem;
+  margin: 0 auto;
+}
+
+.question {
+  margin-bottom: 1.5rem;
+
+  &__title {
+    background: $clr-grey-5;
+    color: $clr-white;
+    border-radius: $radius;
+
+    padding: 0.5rem;
+    transition: $transition;
+
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  &__text-container {
+    // any margine, padiings and border !!!
+    background: $clr-grey-5;
+    color: $clr-white;
+    border-radius: $radius;
+    transition: $transition;
+  }
+  &__text-container:not(.active-text) {
+    height: 0;
+    overflow: hidden;
+    transition: $transition;
+  }
+
+  &__text-container p {
+    border-top: 1px solid $clr-white;
+    padding: 1rem;
+    letter-spacing: $spacing;
+    font-size: 1.1rem;
+    transition: $transition;
+  }
+}
