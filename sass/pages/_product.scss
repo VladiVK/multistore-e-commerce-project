@@ -1,0 +1,24 @@
+.single-product {
+  padding: 2rem 0;
+
+  &__center {
+    margin: 2rem auto;
+    display: grid;
+    grid-gap: 1rem 2rem;
+
+    @include breakpoint-up(medium) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__img {
+    height: 25rem;
+    border-radius: $radius;
+    object-fit: cover;
+  }
+  &__price {
+    color: $clr-grey-3;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+}

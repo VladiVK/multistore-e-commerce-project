@@ -1,1 +1,138 @@
-<h1>Single Product Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Products | Multistore</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar page">
+      <div class="navbar__center">
+        <!-- toggle button & links -->
+        <div class="navbar__toggle-container">
+          <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="navbar__links">
+            <li>
+              <a href="./index.html" class="navbar__link">home</a>
+            </li>
+            <li>
+              <a href="./products.html" class="navbar__link">products</a>
+            </li>
+            <li>
+              <a href="./about.html" class="navbar__link">about</a>
+            </li>
+          </ul>
+        </div>
+        <!-- logo -->
+        <img class="navbar__logo" src="./images/logo-dark.svg" alt="logotype" />
+        <!-- cart icon -->
+        <div class="navbar__toggle-cart-container">
+          <button class="navbar__toggle-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="navbar__toggle-cart-counter">1</span>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-hero">
+      <div class="section-center">
+        <h3 class="page-hero-title">home / single product</h3>
+      </div>
+    </section>
+    <!-- Sidebar -->
+    <div class="sidebar-overlay">
+      <aside class="sidebar">
+        <!-- close button -->
+        <button class="sidebar__close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- sidebar links -->
+        <!-- important "fa-fw" for one row width !!! -->
+        <ul class="sidebar__links">
+          <li>
+            <a href="./index.html" class="sidebar__link">
+              <i class="fas fa-home fa-fw"></i>
+              home
+            </a>
+          </li>
+          <li>
+            <a href="./products.html" class="sidebar__link">
+              <i class="fas fa-tshirt fa-fw"></i>
+              products
+            </a>
+          </li>
+          <li>
+            <a href="./about.html" class="sidebar__link">
+              <i class="fas fa-file-alt fa-fw"></i>
+              about
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <!-- Cart -->
+    <div class="cart__overlay">
+      <!-- <div class="cart__overlay"> -->
+      <aside class="cart">
+        <!-- cart close button -->
+        <button class="cart__close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- header -->
+        <h3 class="cart__title">your shopping cart</h3>
+        <!-- cart product items -->
+        <div class="cart__items"></div>
+        <footer class="cart__footer">
+          <h3 class="cart__total">total: $99.9</h3>
+          <button class="cart__checkout btn">checkout</button>
+        </footer>
+      </aside>
+    </div>
+    <!-- Single Product Page-->
+    <section class="single-product">
+      <div class="section-center single-product__center">
+        <img
+          class="single-product__img img"
+          src="./images/main-bg_primary.jpg"
+          alt="single product"
+        />
+        <article class="single-product__info">
+          <div>
+            <h2 class="single-product__title">couch</h2>
+
+            <p class="single-product__price">$30.00</p>
+            <p class="single-product__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              vero voluptate, delectus eos blanditiis, molestias architecto
+              officia optio non repudiandae ad quidem quos in atque. Cum
+              provident quae facilis non dignissimos recusandae sint cupiditate
+              nostrum perferendis! Praesentium ratione at sunt magni vero
+              temporibus quod illum deserunt eum? Sapiente, corporis fuga.
+            </p>
+            <button class="addToCartBtn btn" data-id="id">add to cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Page Loading -->
+    <!-- <div class="page-loading">
+      <div class="loader"></div>
+    </div> -->
+
+    <script type="module" src="./src/pages/singleProduct.js"></script>
+  </body>
+</html>

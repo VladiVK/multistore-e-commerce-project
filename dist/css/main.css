@@ -625,6 +625,27 @@ Files inside this folder can contain specific element styles and layout.
       -ms-grid-columns: 1fr 1fr 1fr 1fr;
           grid-template-columns: 1fr 1fr 1fr 1fr; } }
 
+.single-product {
+  padding: 2rem 0; }
+  .single-product__center {
+    margin: 2rem auto;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1rem 2rem; }
+    @media screen and (min-width: 992px) {
+      .single-product__center {
+        -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr; } }
+  .single-product__img {
+    height: 25rem;
+    border-radius: 0.25rem;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .single-product__price {
+    color: #324d67;
+    font-weight: 500;
+    font-size: 1.2rem; }
+
 .products {
   width: 90vw;
   max-width: 1170px;
