@@ -525,7 +525,7 @@ Files inside this folder can contain specific element styles and layout.
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  background: #bcccdc; }
+  background: #fff; }
 
 .show .cart {
   -webkit-transform: translateX(0);
@@ -534,7 +534,7 @@ Files inside this folder can contain specific element styles and layout.
 
 .cart__close-btn {
   position: absolute;
-  top: .75rem;
+  top: 0.75rem;
   left: 1rem;
   font-size: 2rem;
   background: none;
@@ -556,6 +556,48 @@ Files inside this folder can contain specific element styles and layout.
   width: 75%;
   margin: 0 auto;
   margin-bottom: 3rem; }
+
+.cart__item {
+  margin: 1rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .cart__item--img {
+    height: 50px;
+    width: 75px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0.25rem; }
+  .cart__item--name {
+    margin-bottom: 0.15rem; }
+  .cart__item--price {
+    margin-bottom: 0;
+    font-size: 0.75rem;
+    color: #324d67; }
+  .cart__item--remove-btn {
+    background: transparent;
+    border-color: transparent;
+    color: #617d98;
+    letter-spacing: 0.1rem;
+    cursor: pointer; }
+  .cart__item--amount {
+    margin-bottom: 0;
+    color: #324d67;
+    text-align: center;
+    line-height: 1; }
+  .cart__item--increase-btn, .cart__item--decrease-btn {
+    background: transparent;
+    border-color: transparent;
+    color: #d8bd5d;
+    cursor: pointer;
+    font-size: 0.85rem;
+    padding: 0.25rem; }
 
 .hero {
   min-height: 100vh;
