@@ -1,5 +1,6 @@
 // global imports
 import '../cart/toggleCart.js';
+import '../cart/setupCart.js';
 import '../toggleSidebar.js';
 // specific imports
 import { getElement, baseURL } from '../utils.js';

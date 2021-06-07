@@ -1,6 +1,7 @@
 // global imports
 import '../cart/toggleCart.js';
 import '../toggleSidebar.js';
+import '../cart/setupCart.js';
 
 const questionTitles = document.querySelectorAll('.question__title');
 
