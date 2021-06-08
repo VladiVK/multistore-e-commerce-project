@@ -4,6 +4,7 @@ import '../cart/setupCart.js';
 import '../toggleSidebar.js';
 // specific imports
 import { getElement, baseURL } from '../utils.js';
+import { addToCart } from '../cart/setupCart.js';
 // selections
 
 const loading = getElement('.page-loading');
@@ -18,7 +19,9 @@ const cartBtn = getElement('.addToCartBtn');
 // cart product
 let productID;
 
-const setupSingleProduct = async () => {
+const setupSingleProduct = async () => {};
+
+window.addEventListener('DOMContentLoaded', async function () {
   let urlID = window.location.search; //?id=1
   urlID = urlID.replace('?id=', '');
 
@@ -28,32 +31,15 @@ const setupSingleProduct = async () => {
       const product = await response.json();
       const { id, title, price, description, image } = product;
       productID = id;
+
       // document title
       document.title = `${title} | Multistore`;
-      // page title
-      pageTitleDOM.textContent = `Home / ${title}`;
-      // setup HTML content
-      centerDOM.innerHTML = `
-        <img
-          class="single-product__img img"
-          src="${image}"
-          alt="${title}"
-        />
-        <article class="single-product__info">
-          <div>
-            <h2 class="single-product__title">${title}</h2>
 
-            <p class="single-product__price">$${price}</p>
-            <p class="single-product__desc">${description}</p>
-            <button class="addToCartBtn btn" data-id="${id}">add to cart</button>
-          </div>
-        </article>
-      `;
-      // pageTitleDOM.textContent = `Home / ${title}`;
-      // imgDOM.src = image;
-      // titleDOM.textContent = title;
-      // priceDOM.textContent = `$${price}`;
-      // descDOM.textContent = description;
+      pageTitleDOM.textContent = `Home / ${title}`;
+      imgDOM.src = image;
+      titleDOM.textContent = title;
+      priceDOM.textContent = `$${price}`;
+      descDOM.textContent = description;
     } else {
       console.log(response.status, response.statusText);
       centerDOM.innerHTML = `
@@ -68,6 +54,8 @@ const setupSingleProduct = async () => {
   }
   // hide loading
   loading.style.display = 'none';
-};
+});
 
-window.addEventListener('DOMContentLoaded', setupSingleProduct);
+cartBtn.addEventListener('click', () => {
+  addToCart(productID);
+});
