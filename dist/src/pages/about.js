@@ -2,6 +2,7 @@
 import '../cart/toggleCart.js';
 import '../toggleSidebar.js';
 import '../cart/setupCart.js';
+import '../setupCopyright.js';
 
 const questionTitles = document.querySelectorAll('.question__title');
 

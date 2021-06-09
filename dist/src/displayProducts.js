@@ -1,3 +1,6 @@
+import { addToCart } from './cart/setupCart.js';
+import { openCart } from './cart/toggleCart.js';
+
 const display = (products, elementDOM) => {
   elementDOM.innerHTML = products
     .map(({ id, title, price, image }) => {
@@ -25,15 +28,16 @@ const display = (products, elementDOM) => {
 
   // next step !!!!
 
-  //   domElement.addEventListener('click', (e) => {
-  //     const parent = e.target.parentElement;
-  //     if (parent.classList.contains('product-cart-btn')) {
-  //       addToCart(parent.dataset.id);
+  elementDOM.addEventListener('click', (e) => {
+    const parent = e.target.parentElement;
+    if (parent.classList.contains('product-cart-btn')) {
+      const id = Number(parent.dataset.id);
+      addToCart(id);
 
-  //       //   open cart on page (optional)
-  //       openCart();
-  //     }
-  //   });
+      //   open cart on page (optional)
+      openCart();
+    }
+  });
 };
 
 export default display;

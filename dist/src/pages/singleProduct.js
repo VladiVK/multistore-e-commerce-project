@@ -2,6 +2,7 @@
 import '../cart/toggleCart.js';
 import '../cart/setupCart.js';
 import '../toggleSidebar.js';
+import '../setupCopyright.js';
 // specific imports
 import { getElement, baseURL } from '../utils.js';
 import { addToCart } from '../cart/setupCart.js';
@@ -30,7 +31,7 @@ window.addEventListener('DOMContentLoaded', async function () {
     if (response.status >= 200 && response.status <= 299) {
       const product = await response.json();
       const { id, title, price, description, image } = product;
-      productID = id;
+      productID = Number(id);
 
       // document title
       document.title = `${title} | Multistore`;

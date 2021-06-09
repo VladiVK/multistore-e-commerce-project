@@ -19,7 +19,9 @@ const setupStore = (products) => {
   setLocalStorageItem('store', store);
 };
 
-const findProduct = (id) => store.find((product) => product.id === id);
+const findProduct = (id) => {
+  return store.find((product) => product.id === Number(id));
+};
 
 const createFeaturedProducts = () => {
   const electronics = store.find((elem) => elem.category === 'electronics');

@@ -17,6 +17,7 @@ const setLocalStorageItem = (name, item) => {
   localStorage.setItem(name, JSON.stringify(item));
 };
 
+
 export {
   baseURL,
   allCategoriesURL,

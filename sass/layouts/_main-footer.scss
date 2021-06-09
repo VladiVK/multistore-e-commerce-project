@@ -1,0 +1,19 @@
+.main-footer {
+  min-height: 10vh;
+  background: $clr-black;
+  display: flex;
+  align-items: center;
+
+  &__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .copy {
+      color: $clr-primary-1;
+    }
+  }
+
+  &__title {
+    color: $clr-primary-1;
+  }
+}

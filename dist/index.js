@@ -2,6 +2,7 @@
 import './src/toggleSidebar.js';
 import './src/cart/toggleCart.js';
 import './src/cart/setupCart.js';
+import './src/setupCopyright.js';
 // specific imports
 import { getElement, baseURL } from './src/utils.js';
 import { store, setupStore, createFeaturedProducts } from './src/store.js';

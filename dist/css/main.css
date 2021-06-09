@@ -599,6 +599,30 @@ Files inside this folder can contain specific element styles and layout.
     font-size: 0.85rem;
     padding: 0.25rem; }
 
+.main-footer {
+  min-height: 10vh;
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .main-footer__center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .main-footer__center .copy {
+      color: #FAD13B; }
+  .main-footer__title {
+    color: #FAD13B; }
+
 .hero {
   min-height: 100vh;
   margin-top: -6rem;
